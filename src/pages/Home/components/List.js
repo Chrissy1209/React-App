@@ -2,13 +2,11 @@ import Item from "./Item"
 
 const arr = ["hhh",1,3]
 
-const List = () => {
+const List = ({ listData }) => {
     return <div className="list">
-        {/* {arr.map(e => <div>{e}</div>)} */}
         {
-            arr.map(i => <Item />)
+            listData.map(e => <Item key = {e} />) /* 效能問題：key不能塞index  */
         }
-        
     </div>
 }
 
