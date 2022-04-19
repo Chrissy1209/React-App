@@ -18,10 +18,12 @@ const Edit = ({ add }) => {
     }
 //-------------
     function addItem() {
-        add({
-            note,
-            date,
-            time
+        add(function(pre) {
+            return [...pre, {
+                note,
+                date,
+                time
+            }]
         })
     }
 

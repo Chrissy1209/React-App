@@ -1,7 +1,5 @@
 import Item from "./Item"
 
-const arr = ["hhh",1,3]
-
 const List = ({ listData }) => {
     return <div className="list">
         {
