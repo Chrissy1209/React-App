@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 const Edit = ({ add }) => {
-
     const [note, setNote] = useState("")
     function noteChange(e) {
         setNote(e.target.value)
